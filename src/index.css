@@ -1,5 +1,77 @@
-body {
+:root {
+  --marginDimension: 30px;
+}
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+/* Header */
+
+.header {
+  height: 85px;
+  position: relative;
+  background: black;
+}
+.logo {
+  margin-left: var(--marginDimension);
+  margin-top: var(--marginDimension);
+}
+.register-icon {
+  position: absolute;
+  height: 25px;
+  width: 20px;
+  top: var(--marginDimension);
+  right: var(--marginDimension);
+  color: white;
+}
+
+/* Teaser */
+
+.teaser-image {
+  width: 100vw;
+  height: 55vh;
+  background: url(./images/background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.teaser-content {
+  margin-left: var(--marginDimension);
+  padding-top: 100px;
+}
+.teaser-title {
+  color: white;
+  font-size: 3em;
+  font-weight: bolder;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.teaser-play-button {
+  margin-top: 10px;
+  font-weight: bolder;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+.teaser-play-button:hover {
+  background-color: darkgray;
+}
+.teaser-more-info-button {
+  margin-left: 10px;
+  font-weight: bolder;
+  padding: 8px 20px;
+  border-radius: 5px;
+  background-color: darkgray;
+  color: white;
+}
+.teaser-more-info-button:hover {
+  background-color: dimgray;
+}
+.teaser-desc {
+  margin-top: 10px;
+  width: 23em;
+  color: white;
+  font-size: large;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  text-align: justify;
 }
