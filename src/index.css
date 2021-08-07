@@ -6,14 +6,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  position: relative;
 }
 
 /* Header */
 
 .header {
   height: 85px;
-  position: relative;
+  position: sticky;
+  top: 0;
   background: black;
+  z-index: 1;
 }
 .logo {
   margin-left: var(--marginDimension);
@@ -30,7 +33,7 @@
 
 /* Teaser */
 
-.teaser-image {
+/* .teaser-image {
   width: 100vw;
   height: 55vh;
   background: url(./images/background.jpeg);
@@ -74,4 +77,29 @@
   font-size: large;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   text-align: justify;
+} */
+
+/* Cards */
+
+.bground {
+  background-color: #111;
+}
+.cards {
+  margin-left: var(--marginDimension);
+}
+.cards-heading {
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 20px 0px 15px 10px;
+}
+.imgg {
+  width: 200px;
+  margin: 5px;
+  border-radius: 5px;
+}
+.imgg:hover {
+  transform: scale(1.1);
+  transition: all 0.5s 0s;
+  cursor: grab;
 }
