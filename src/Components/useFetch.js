@@ -19,11 +19,16 @@ export const useFetch = (url) => {
   }, [url]);
 
   useEffect(() => {
+    let num = -1;
     const posterPath = array.map((item) => {
+      num += 1;
       return {
-        key: item.id,
+        key: num,
         poster: "https://image.tmdb.org/t/p/original" + item.poster_path,
         id: item.id,
+        name: item.original_title,
+        description: item.overview,
+        backDrop: "https://image.tmdb.org/t/p/original" + item.backdrop_path,
       };
     });
     setImages(posterPath);

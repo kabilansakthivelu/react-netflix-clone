@@ -34,7 +34,7 @@ function App() {
     <div className="App">
       <Header />
 
-      {/* <Teaser /> */}
+      <Teaser />
 
       <div className="contentCards">
         {/* NETFLIX ORIGINALS */}
