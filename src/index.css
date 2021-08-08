@@ -16,7 +16,7 @@
   position: sticky;
   top: 0;
   background: black;
-  z-index: 1;
+  z-index: 4;
 }
 .logo {
   margin-left: var(--marginDimension);
@@ -93,12 +93,45 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 20px 0px 15px 10px;
 }
-.imgg {
+.individualSection {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.leftArrow {
+  color: white;
+  position: absolute;
+  z-index: 3;
+  top: 4.5em;
+  left: 0.5em;
+  font-size: xx-large;
+  transition: all 0.5s 0s;
+}
+.leftArrow:hover {
+  transform: scale(1.3);
+  transition: all 0.5s 0s;
+}
+.rightArrow {
+  color: white;
+  position: absolute;
+  z-index: 3;
+  top: 4.5em;
+  right: 0.5em;
+  font-size: xx-large;
+  transition: all 0.5s 0s;
+}
+.rightArrow:hover {
+  transform: scale(1.3);
+  transition: all 0.5s 0s;
+}
+.image {
   width: 200px;
   margin: 5px;
   border-radius: 5px;
+  transition: all 0.5s 0s;
 }
-.imgg:hover {
+.image:hover {
   transform: scale(1.1);
   transition: all 0.5s 0s;
   cursor: grab;
