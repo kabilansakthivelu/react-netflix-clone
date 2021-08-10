@@ -26,9 +26,11 @@ export const useFetch = (url) => {
         key: num,
         poster: "https://image.tmdb.org/t/p/original" + item.poster_path,
         id: item.id,
-        name: item.original_title,
+        name: item.original_title || item.original_name,
         description: item.overview,
         backDrop: "https://image.tmdb.org/t/p/original" + item.backdrop_path,
+        releaseDate: item.first_air_date || item.release_date,
+        rating: item.vote_average,
       };
     });
     setImages(posterPath);
