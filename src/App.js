@@ -18,7 +18,7 @@ const horrorMoviesURL =
 const romanceMoviesURL =
   "https://api.themoviedb.org/3/trending/all/week?api_key=896c8566fc255f7c52f6ea6bd2901188&language=en-US";
 const documentariesURL =
-  "https://api.themoviedb.org/3/discover/movie?api_key=896c8566fc255f7c52f6ea6bd2901188&with_genres=99";
+  "https://api.themoviedb.org/3/discover/movie?api_key=896c8566fc255f7c52f6ea6bd2901188&with_genres=27";
 
 function App() {
   const netflixOriginalsCards = useFetch(netflixOriginalsURL);
